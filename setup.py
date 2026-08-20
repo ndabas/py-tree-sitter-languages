@@ -24,6 +24,8 @@ setuptools.setup(
     packages=['tree_sitter_languages'],
     package_data={'tree_sitter_languages': ['languages.so', 'languages.dll']},
     install_requires=['tree-sitter<0.22'],
+    # Upper bound tracks tree-sitter<0.22, which publishes no wheels for 3.14+.
+    python_requires='>=3.9,<3.14',
     project_urls={
         'Documentation': 'https://github.com/grantjenks/py-tree-sitter-languages',
         'Source': 'https://github.com/grantjenks/py-tree-sitter-languages',
