@@ -33,7 +33,7 @@ jobs:
         with:
           output-dir: dist
         env:
-          CIBW_BEFORE_BUILD: pip install cython==3.0.8 && pip install -e . && python build.py
+          CIBW_BEFORE_BUILD: pip install -e . && python build.py
           CIBW_TEST_REQUIRES: pytest
           CIBW_TEST_COMMAND: pytest --showlocals {package}/tests
           CIBW_ARCHS_MACOS: x86_64 arm64
