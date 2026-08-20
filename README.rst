@@ -32,7 +32,7 @@ at:
 
 2. `repos.txt` — Text file that contains a list of included language repositories and their commit hashes.
 
-3. `build.py` — Python script to download and build the language repositories.
+3. `build_languages.py` — Python script to download and build the language repositories.
 
 4. `.github/workflows/release.yml` — GitHub action to invoke `cibuildwheel`_ and
    release to PyPI.
